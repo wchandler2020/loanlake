@@ -1,0 +1,17 @@
+bundle:
+  name: loanlake
+
+include:
+  - resources/*.yml
+
+variables:
+  catalog:
+    description: Unity Catalog catalog this deployment reads and writes
+    default: loanlake_dev
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-8910d6f9-e91c.cloud.databricks.com
