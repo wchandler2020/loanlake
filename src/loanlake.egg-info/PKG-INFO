@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: loanlake
+Version: 0.1.0
+Summary: Production-style Databricks pipeline for loan servicing data
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pyspark==3.5.3; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
