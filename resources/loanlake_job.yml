@@ -1,0 +1,11 @@
+resources:
+  jobs:
+    loanlake_pipeline:
+      name: loanlake_pipeline
+      parameters:
+        - name: catalog
+          default: ${var.catalog}
+      tasks:
+        - task_key: setup_catalog
+          notebook_task:
+            notebook_path: ../notebooks/00_setup_catalog.py
