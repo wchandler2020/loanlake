@@ -9,3 +9,9 @@ resources:
         - task_key: setup_catalog
           notebook_task:
             notebook_path: ../notebooks/00_setup_catalog.py
+
+        - task_key: generate_landing_data
+          depends_on:
+            - task_key: setup_catalog
+          notebook_task:
+            notebook_path: ../notebooks/01_generate_landing_data.py
